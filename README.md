@@ -16,7 +16,13 @@ git clone git@github.com:403-html/kpdust.git
 cd kpdust
 ```
 
-1. Install the required packages:
+2. Create temporary env, so you don't trash your global one:
+
+```bash
+python3 -m venv venv && source venv/bin/activate
+```
+
+3. Install the required packages:
 
 ```bash
 pip install -r requirements.txt
