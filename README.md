@@ -30,6 +30,25 @@ Run the script with the path to your `.kdbx` file as an argument:
 python kpdust.py /path/to/your/database.kdbx
 ```
 
+Example output:
+
+```sh
+$ python3 kpdust.py sample.kdbx
+Enter master password: 
+KeePass DB: sample.kdbx (8.79 MB)
+Total entries with attachments: 6
+Total attachment size: 8.79 MB
+
+Size         Count  Entry                  Group     Attachments
+---------  -------  ---------------------  --------  ---------------------------------------------------
+5.00 MB          1  Project Documentation  Work      project_design.bin (5.00 MB)
+2.00 MB          1  Family Photos          Personal  family_photo.bin (2.00 MB)
+1.00 MB          1  Client Presentation    Clients   presentation.bin (1.00 MB)
+800.00 KB        2  Travel Documents       Personal  passport.bin (500.00 KB), insurance.bin (300.00 KB)
+5.00 KB          1  Tax Information        Finance   tax_id.bin (5.00 KB)
+2.00 KB          1  SSH Keys               Work      id_rsa.bin (2.00 KB)
+```
+
 ## Options
 
 - `-n` or `--entries`: Specify the number of entries to show (default: 10, from biggest to smallest).
